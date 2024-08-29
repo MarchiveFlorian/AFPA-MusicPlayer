@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section id="mainHeader" class="flexSet1">
+            <article id="settings">
+                <article id="player" class="flexSet1">
+                    <button id="previousButton">⏮️</button>
+                    <button id="playButton">⏯️</button>
+                    <button id="nextButton">⏭️</button>
+                </article>
+                <article id="sound" class="flexSet1">
+                    <button id="lowSoundButton">🔉</button>
+                    <input id="volumeSlider" type="range" value="100">
+                    <button id="highSoundButton">🔊</button>
+                </article>
+            </article>
+            <article id="musicDisplay">
+                <p id="artistName">Nom de l'artiste</p>
+                <p id="musicName">Titre de la chanson</p>
+                <input id="progSlider" type="range" value="0">
+            </article>
+            <article id="search">
+                <button id="loupeButton">🔍</button>
+                <input type="search" id="searchInput" placeholder="recherche">
+            </article>
+        </section>
+
+        <section id="nav-cards">
+            <nav>
+                <ul>
+                    <li><a href="musics">Music</a></li>
+                    <li class="greyDisable"><a href="videos">Vidéos</a></li>
+                    <li class="greyDisable"><a href="podcasts">Podcasts</a></li>
+                </ul>
+            </nav>
+            <section id="cardsArea">
+                <article class="cards" data-index="0">
+                    <img src="pochettes/340/1.jpg" alt="pochette album Blue skies">
+                    <p class="cardsTitle">Blue Skies</p>
+                    <p class="cardsArtist">Nom artiste</p>
+                </article>
+                <article class="cards" data-index="1">
+                    <img src="pochettes/340/2.jpg" alt="">
+                    <p class="cardsTitle">Cartoon Hoedown</p>
+                    <p class="cardsArtist">Nom artiste</p>
+                </article>
+                <article class="cards" data-index="2">
+                    <img src="pochettes/340/3.jpg" alt="">
+                    <p class="cardsTitle">Earthy Crust</p>
+                    <p class="cardsArtist">Nom artiste</p>
+                </article>
+                <article class="cards" data-index="3">
+                    <img src="pochettes/340/4.jpg" alt="">
+                    <p class="cardsTitle">Hold on a Minute</p>
+                    <p class="cardsArtist">Nom artiste</p>
+                </article>
+                <article class="cards" data-index="4">
+                    <img src="pochettes/340/5.jpg" alt="">
+                    <p class="cardsTitle">John Dunbar Theme</p>
+                    <p class="cardsArtist">Nom artiste</p>
+                </article>
+                <article class="cards" data-index="5">
+                    <img src="pochettes/340/6.jpg" alt="">
+                    <p class="cardsTitle">Stay with you</p>
+                    <p class="cardsArtist">Nom artiste</p>
+                </article>
+                <article class="cards" data-index="6">
+                    <img src="pochettes/340/7.jpg" alt="">
+                    <p class="cardsTitle">Symphony n°5</p>
+                    <p class="cardsArtist">Beethoven</p>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <audio id="mediaplayer"  hidden controls></audio>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

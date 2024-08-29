@@ -1,0 +1,199 @@
+body {
+    margin: 2% 5% 0 5%;
+}
+
+main {
+    border: 1px black solid;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0px 10px 13px -7px #000000;
+}
+
+audio{
+    margin: 5% auto;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+img {
+    width: 100%;
+    margin: 8px;
+}
+
+.flexSet1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+#mainHeader {
+    width: 100%;
+}
+
+#settings {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#player {
+    margin-bottom: 10px;
+}
+
+#player button {
+    width: 28%;
+    padding: 3px;
+}
+
+#sound {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sound input {
+    width: 50%;
+}
+
+#musicDisplay {
+    width: 30%;
+}
+
+#musicDisplay input {
+    width: 100%;
+}
+
+#search {
+    width: 30%;
+}
+
+#search button {
+    padding: 3px;
+    margin-right: -5px;
+}
+
+#search input {
+    padding: 4px;
+    width: 70%;
+}
+
+#nav-cards {
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+nav {
+    text-align: start;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    border: 1px black solid;
+    padding: 10px 30px;
+}
+
+.greyDisable {
+    background-color: grey;
+}
+
+a {
+    text-decoration: none;
+}
+
+#cardsArea {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 80%; 
+    max-width: 220px; 
+    color: blue;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.cards img {
+    width: 100%;
+    height: auto;
+}
+
+.cards:hover {
+    border-color: blue;
+    border-width: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cardsTitle,
+#artistName {
+    font-size: larger;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+    #cardsArea {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #cardsArea {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #settings {
+        width: 100%;
+    }
+
+    #musicDisplay,
+    #search {
+        width: 100%;
+    }
+
+    #search input {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #mainHeader,
+    #nav-cards {
+        flex-wrap: wrap;
+    }
+
+    #cardsArea {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #search input {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 424px) {
+    #cardsArea {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #search input {
+        width: 90%;
+    }
+}
