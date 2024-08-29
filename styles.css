@@ -68,7 +68,9 @@ img {
 }
 
 #search {
+    display: flex;
     width: 30%;
+    align-items: center;
 }
 
 #search button {
